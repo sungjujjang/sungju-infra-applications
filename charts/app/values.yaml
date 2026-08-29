@@ -1,0 +1,56 @@
+# Application
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+
+# Service
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+
+# IngressRoute
+ingress:
+  enabled: false
+
+  # Traefik entryPoint
+  entryPoints:
+    - web
+
+  host: ""
+
+
+# MySQL
+mysql:
+  enabled: false
+
+  image:
+    repository: mysql
+    tag: "8.4"
+    pullPolicy: IfNotPresent
+
+  database: app
+  username: app
+
+  storage:
+    storageClassName: longhorn
+    size: 10Gi
+
+
+# Redis
+redis:
+  enabled: false
+
+  image:
+    repository: redis
+    tag: "7-alpine"
+    pullPolicy: IfNotPresent
+
+  storage:
+    storageClassName: longhorn
+    size: 5Gi

@@ -1,0 +1,20 @@
+{{- if .Values.mysql.enabled }}
+
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: {{ include "app.name" . }}-mysql
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: {{ include "app.name" . }}-mysql
+
+  ports:
+    - name: mysql
+      port: 3306
+      targetPort: 3306
+
+{{- end }}

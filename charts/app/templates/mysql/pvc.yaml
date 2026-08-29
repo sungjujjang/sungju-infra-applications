@@ -1,0 +1,19 @@
+{{- if .Values.mysql.enabled }}
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+
+metadata:
+  name: {{ include "app.name" . }}-mysql-data
+
+spec:
+  accessModes:
+    - ReadWriteOnce
+
+  storageClassName: {{ .Values.mysql.storage.storageClassName }}
+
+  resources:
+    requests:
+      storage: {{ .Values.mysql.storage.size }}
+
+{{- end }}
