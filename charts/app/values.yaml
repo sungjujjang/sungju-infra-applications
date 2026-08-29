@@ -24,6 +24,10 @@ ingress:
 
   host: ""
 
+secret:
+  enabled: false
+  name: ""
+
 
 # MySQL
 mysql:
