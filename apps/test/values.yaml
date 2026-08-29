@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: nginx
@@ -10,7 +10,7 @@ service:
 
 ingress:
   enabled: true
-  host: my-app.example.com
+  host: asdf1234.sungju.xyz
 
 mysql:
   enabled: false
