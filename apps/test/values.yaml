@@ -13,7 +13,7 @@ ingress:
   host: my-app.example.com
 
 mysql:
-  enabled: true
+  enabled: false
 
 redis:
-  enabled: true
+  enabled: false
