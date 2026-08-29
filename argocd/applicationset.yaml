@@ -30,7 +30,7 @@ spec:
 
           helm:
             valueFiles:
-              - '$values/{{path}}/{{filename}}'
+              - '$values/{{path}}/values.yaml'
               
         # 앱별 values.yaml
         - repoURL: https://github.com/sungjujjang/sungju-infra-applications.git
