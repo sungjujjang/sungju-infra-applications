@@ -8,7 +8,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/sungjujjang/sungju-argocd-test-repo.git
+        repoURL: https://github.com/sungjujjang/sungju-infra-applications.git
         revision: HEAD
 
         files:
