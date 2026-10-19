@@ -13,7 +13,7 @@ secret:
 
 # MySQL
 mysql:
-  enabled: false
+  enabled: true
 
   image:
     repository: mysql
