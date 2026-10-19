@@ -3,7 +3,7 @@ replicaCount: 1
 
 image:
   repository: sungjujjang/dns
-  tag: "20261020-004154"
+  tag: "20261020-005409"
   pullPolicy: IfNotPresent
 
 secret:
