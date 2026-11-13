@@ -3,7 +3,7 @@ replicaCount: 1
 
 image:
   repository: sungjujjang/nolga-mcp-prod
-  tag: "latest"
+  tag: "20261113-031931"
   pullPolicy: IfNotPresent
 
 ingress:
