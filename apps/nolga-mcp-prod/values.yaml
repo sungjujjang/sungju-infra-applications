@@ -1,0 +1,7 @@
+# Application
+replicaCount: 1
+
+image:
+  repository: sungjujjang/nolga-mcp-prod
+  tag: "latest"
+  pullPolicy: IfNotPresent
