@@ -5,3 +5,12 @@ image:
   repository: sungjujjang/nolga-mcp-prod
   tag: "latest"
   pullPolicy: IfNotPresent
+
+ingress:
+  enabled: true
+
+  # Traefik entryPoint
+  entryPoints:
+    - web
+
+  host: "nolga-mcp.sungju.xyz"
