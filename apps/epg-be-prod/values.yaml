@@ -3,7 +3,7 @@ replicaCount: 1
 
 image:
   repository: sungjujjang/epg-be-prod
-  tag: "20261117-192810"
+  tag: "20261118-083514"
   pullPolicy: IfNotPresent
 
 secret:
