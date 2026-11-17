@@ -1,0 +1,21 @@
+# Application
+replicaCount: 1
+
+image:
+  repository: sungjujjang/epg-be-prod
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+secret:
+  enabled: true
+  name: "epg-be-prod-secret"
+
+mysql:
+  enabled: true
+
+redis:
+  enabled: true
+
+ingress:
+  enabled: true
+  host: "api.easy-pg.xyz"
